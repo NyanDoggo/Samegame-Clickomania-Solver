@@ -100,7 +100,7 @@ class Solver {
 
     private static void solve(GameState root){
         root.setChildren(makeAllPossibleMoves(root));
-        if (root.children.size() == 0){
+        if (root.children.isEmpty()){
             leafStates.add(root);
             return;
         }
